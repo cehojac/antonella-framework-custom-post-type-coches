@@ -48,7 +48,9 @@ class Config
     * @example ['body_class','CPTC::function',10,2]
     * @example ['body_class',['CPTC','function'],10,2]
     */
-    public $add_action=[];
+    public $add_action=[
+        ['cmb2_admin_init',__NAMESPACE__.'\CochesController::cmb2_sample_metaboxes']
+    ];
     /**
     * add custom shortcodes
     * @input array
